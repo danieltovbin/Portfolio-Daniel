@@ -1,0 +1,33 @@
+.home {
+  img {
+    background-color: #858a91;
+    border-radius: 20%;
+  }
+
+  span {
+    color: #858a91;
+    text-shadow: #858a91 1px 0 3px;
+    font-weight: bolder;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    i {
+      color: #2c232e;
+    }
+  }
+
+  @media (max-width: 768px) {
+    img {
+      margin-bottom: 20px;
+    }
+    h1,
+    p {
+      margin-bottom: 20px;
+      text-align: start;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.navbar-dark,
+.navbar[data-bs-theme="dark"] {
+  width: 100vw;
+}
+
+a.navbar-brand {
+  font-size: 50px;
+  margin-right: 72px;
+  color: #2c232e;
+  font-weight: bolder;
+
+  &:hover,
+  &:focus {
+    color: #e7d2cc;
+  }
+}
+
+.custom-header {
+  box-sizing: content-box !important;
+}
+
+a.nav-link,
+.navbar-nav,
+.nav-link.show {
+  color: #f0f0ee;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #858a91 !important;
+  }
+}
+
+.navbar > .container {
+  padding: 20px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link:active,
+.navbar .nav-link.active {
+  color: #858a91 !important;
+}
+
+.social-link {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+
+  i {
+    color: #2c232e;
+  }
+}
+
+.navbar-toggler {
+  border: none !important;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none;
+  }
+}

@@ -1,0 +1,15 @@
+export const skills:string[] = [
+  "Redux",
+  "TypeScript",
+  "JavaScript",
+  "React.js",
+  "Node.js",
+  "MongoDB",
+  "Bootstrap",
+  "MySQL",
+  "OOP",
+  "MVC",
+  "API",
+  "REST APIs",
+  "Mui",
+];

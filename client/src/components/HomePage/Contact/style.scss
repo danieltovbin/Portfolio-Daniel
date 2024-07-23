@@ -1,0 +1,44 @@
+.social-links-contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+#contact {
+  @media (max-width: 768px) {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: start;
+  }
+}
+
+.number-contact {
+  text-shadow: #2c232e 1px 0 1px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 5px;
+  color: #2c232e;
+  font-size: 35px;
+
+  i {
+    color: #2c232e;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shake {
+  display: inline-block;
+  animation: shake 0.5s infinite;
+}
