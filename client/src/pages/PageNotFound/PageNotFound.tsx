@@ -1,6 +1,5 @@
-import React from "react";
-import "./style.scss";
 import Header from "../../components/Header/Header";
+import "./style.scss";
 
 const PageNotFound = () => {
   return (

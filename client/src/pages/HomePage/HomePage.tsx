@@ -1,11 +1,10 @@
-import React from 'react';
 import Header from '../../components/Header/Header';
-import './style.scss'
-import Home from '../../components/HomePage/Home/Home';
 import About from '../../components/HomePage/About/About';
-import Skills from '../../components/HomePage/Skills/Skills';
-import Projects from '../../components/HomePage/Projects/Projects';
 import Contact from '../../components/HomePage/Contact/Contact';
+import Home from '../../components/HomePage/Home/Home';
+import Projects from '../../components/HomePage/Projects/Projects';
+import Skills from '../../components/HomePage/Skills/Skills';
+import './style.scss';
 
 const HomePage = () => {
   return (
