@@ -1,0 +1,15 @@
+#projects {
+  .para-on-sm-screens {
+    display: none;
+    margin: 0;
+    text-shadow: #b1aea4 1px 0 10px;
+    font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 70px;
+
+    .para-on-sm-screens {
+      display: block;
+    }
+  }
+}
