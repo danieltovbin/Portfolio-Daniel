@@ -15,10 +15,6 @@ a.navbar-brand {
   }
 }
 
-.custom-header {
-  box-sizing: content-box !important;
-}
-
 a.nav-link,
 .navbar-nav,
 .nav-link.show {
@@ -34,6 +30,15 @@ a.nav-link,
 
 .navbar > .container {
   padding: 20px;
+}
+.custom-header {
+  box-sizing: content-box !important;
+
+  @media (max-width: 768px) {
+    a.navbar-brand {
+      margin: 0;
+    }
+  }
 }
 
 .navbar .nav-link:hover,

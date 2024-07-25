@@ -8,7 +8,7 @@ import Linkedin from "../HomePage/Contact/Linkedin/Linkedin";
 import Github from "../HomePage/Contact/Github/Github";
 import { navLinks } from "./header";
 
-const Header = () => {
+const HeaderNav = () => {
   return (
     <Navbar className="custom-header" sticky="top" expand="lg">
       <Container>
@@ -42,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderNav;

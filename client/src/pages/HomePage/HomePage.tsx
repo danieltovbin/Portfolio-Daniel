@@ -1,4 +1,4 @@
-import Header from '../../components/Header/Header';
+import HeaderNav from '../../components/Header/HeaderNav';
 import About from '../../components/HomePage/About/About';
 import Contact from '../../components/HomePage/Contact/Contact';
 import Home from '../../components/HomePage/Home/Home';
@@ -9,7 +9,7 @@ import './style.scss';
 const HomePage = () => {
   return (
     <div>
-        <Header />
+        <HeaderNav />
         <div className='home-container'>
         <Home />
         <About />

@@ -23,11 +23,13 @@
   @media (max-width: 768px) {
     img {
       margin-bottom: 20px;
+      width: 85%;
     }
     h1,
     p {
       margin-bottom: 20px;
       text-align: start;
+      font-size: 13px;
     }
   }
 }

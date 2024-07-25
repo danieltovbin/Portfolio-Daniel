@@ -1,10 +1,10 @@
-import Header from "../../components/Header/Header";
+import HeaderNav from "../../components/Header/HeaderNav";
 import "./style.scss";
 
 const PageNotFound = () => {
   return (
     <>
-      <Header />
+      <HeaderNav />
       <div className="page-not-found">Oops.. PAGE NOT FOUND.</div>;
     </>
   );
