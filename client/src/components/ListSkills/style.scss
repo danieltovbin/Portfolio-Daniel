@@ -1,14 +1,10 @@
 .list-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 
   .list-group{
-    display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
   }
 
   button.list-group-item {
@@ -17,10 +13,7 @@
     margin: 5px 0;
     color: #858a91;
     background-color: white;
-    text-align: center;
-    justify-content: center;
-    font-weight: 600;
-    border: none;
+    font-weight: 800;
     box-shadow: 1px 1px 6px #2c232e;
     gap: 4px;
 
@@ -34,7 +27,6 @@
     i.bi.bi-check-square-fill {
       background: none;
       color: #858a91;
-      text-align: center;
     }
   }
 }

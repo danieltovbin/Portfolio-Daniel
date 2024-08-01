@@ -1,8 +1,3 @@
-.navbar-dark,
-.navbar[data-bs-theme="dark"] {
-  width: 100vw;
-}
-
 a.navbar-brand {
   font-size: 50px;
   margin-right: 72px;
@@ -16,8 +11,7 @@ a.navbar-brand {
 }
 
 a.nav-link,
-.navbar-nav,
-.nav-link.show {
+.navbar-nav{
   color: #f0f0ee;
   cursor: pointer;
 
@@ -33,19 +27,6 @@ a.nav-link,
 }
 .custom-header {
   box-sizing: content-box !important;
-
-  @media (max-width: 768px) {
-    a.navbar-brand {
-      margin: 0;
-    }
-  }
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link:focus,
-.navbar .nav-link:active,
-.navbar .nav-link.active {
-  color: #858a91 !important;
 }
 
 .social-link {

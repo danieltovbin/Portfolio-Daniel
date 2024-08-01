@@ -6,8 +6,7 @@
 
     img {
       width: 260px;
-      height: 280px;
-      border: 2px solid #f0f0ee;
+      height: 270px;
       border-radius: 50% 90% 50% 90%;
       background-color: #f0f0ee;
     }
@@ -27,7 +26,6 @@
 
     .info {
       color: #6c757d;
-      font-weight: normal;
       margin-left: 20px;
       display: table-cell;
     }
@@ -64,7 +62,6 @@
     .details-container {
       display: block;
       width: 100%;
-      font-size: 13px;
     }
   }
 }
@@ -79,29 +76,6 @@
   display: flex;
   gap: 5px;
   justify-content: center;
-  width: 150px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateX(100%);
-    transition: all 0.4s ease-out;
-  }
-
-  &:hover {
-    transition: all 0.4s ease-out;
-
-    &::before {
-      width: 100%;
-      height: 100%;
-      background-color: #f0f0ee;
-      color: #2c232e;
-      transform: translateX(0);
-      transition: all 0.4s ease-out;
-    }
-  }
 
   span,
   i {
@@ -109,10 +83,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .about .details-container .details {
-    display: block !important;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
