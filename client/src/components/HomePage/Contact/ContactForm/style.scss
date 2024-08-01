@@ -1,0 +1,37 @@
+.form-validation {
+  label {
+    display: flex;
+    color: #2c232e;
+  }
+
+  .row-form {
+    display: flex;
+    justify-content: center;
+  }
+
+  input.form-control {
+    background-color: white;
+    border: none;
+    margin-bottom: 5px;
+  }
+
+  .message-form {
+    margin: auto;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #858a91;
+    border: none;
+    color: #fff;
+
+    &:hover {
+      background-color: #2c232e !important;
+    }
+    &:focus,
+    &:active {
+      background-color: #2c232e !important;
+    }
+  }
+}

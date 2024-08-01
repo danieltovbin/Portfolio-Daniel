@@ -1,0 +1,32 @@
+.list-container {
+  display: flex;
+
+  .list-group{
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button.list-group-item {
+    display: flex;
+    min-width: 200px;
+    margin: 5px 0;
+    color: #858a91;
+    background-color: white;
+    font-weight: 800;
+    box-shadow: 1px 1px 6px #2c232e;
+    gap: 4px;
+
+    &:hover {
+      color: #2c232e;
+      i.bi.bi-check-square-fill {
+        color: #2c232e;
+      }
+    }
+
+    i.bi.bi-check-square-fill {
+      background: none;
+      color: #858a91;
+    }
+  }
+}
