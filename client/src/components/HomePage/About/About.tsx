@@ -1,11 +1,13 @@
-import resume from "../../../assets/CV-Daniel-Tovbin.pdf";
+import { useAppSelector } from "../../../app/hooks";
 import profileAbout from "../../../assets/profileAbout.png";
 import Title from "../../Title/Title";
-import { details } from "./details";
 import "../style.scss";
+import { details } from "./details";
 import "./style.scss";
 
 const About = () => {
+  const isSmallScreen = useAppSelector((state) => state.screen.isSmallScreen);
+
   return (
     <div id="about" className="same-container">
       <div>
@@ -23,15 +25,22 @@ const About = () => {
               </span>
             </p>
             <div className="details">
-              {details && details.map((detail) => (
-                <>
-                <p>
-                {detail.title} <span className="info">{detail.detail}</span>
-              </p>
-                </>
-              ))}
-              <a href={resume} download className="main-btn" id="resume">
-                <span>Download CV</span>
+              {details &&
+                details.map((detail, index) => (
+                  <div key={index}>
+                    <p>
+                      {detail.title}{" "}
+                      <span className="info">{detail.detail}</span>
+                    </p>
+                  </div>
+                ))}
+              <a
+                href="https://www.linkedin.com/in/daniel-tovbin-319a44261/"
+                download
+                className="main-btn"
+                id="resume"
+              >
+                <span>{isSmallScreen ? "CV" : "Download CV"}</span>
                 <span>
                   <i className="bi bi-download"></i>
                 </span>
