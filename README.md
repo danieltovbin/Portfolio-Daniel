@@ -8,6 +8,8 @@ Welcome to my portfolio! Here, you can explore more about me, my skills, and the
 
 ## Tools and Technologies
 - **React**: JavaScript library for building user interfaces.
+- **Redux**: State management library for JavaScript applications.
+- **Redux Toolkit**: Official, recommended way to write Redux logic, providing a set of tools and best practices for efficient state management.
 - **Bootstrap**: CSS framework for responsive design.
 - **TypeScript**: Programming language for the web.
 - **SCSS**: Syntactically Awesome Style Sheets for enhanced styling.
