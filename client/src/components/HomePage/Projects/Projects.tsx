@@ -1,24 +1,11 @@
-import { useEffect, useState } from "react";
+import { useAppSelector } from "../../../app/hooks";
 import Title from "../../Title/Title";
 import "../style.scss";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import "./style.scss";
 
 const Projects = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  const handleResize = () => {
-    setIsSmallScreen(window.innerWidth <= 768);
-  };
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const isSmallScreen = useAppSelector((state) => state.screen.isSmallScreen);
 
   return (
     <div id="projects" className="same-container">
@@ -28,6 +15,7 @@ const Projects = () => {
           Scroll sideways to see more projects
         </p>
       )}
+
       <ProjectCard />
     </div>
   );
