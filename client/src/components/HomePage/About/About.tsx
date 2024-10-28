@@ -25,15 +25,15 @@ const About = () => {
               </span>
             </p>
             <div className="details">
-              {details &&
-                details.map((detail, index) => (
-                  <div key={index}>
-                    <p>
-                      {detail.title}{" "}
-                      <span className="info">{detail.detail}</span>
-                    </p>
-                  </div>
-                ))}
+              <tbody>
+                {details &&
+                  details.map((detail, index) => (
+                    <tr key={index}>
+                      <td className="title">{detail.title}</td>
+                      <td className="info">{detail.detail}</td>
+                    </tr>
+                  ))}
+              </tbody>
               <a
                 href="https://www.linkedin.com/in/daniel-tovbin-319a44261/"
                 download
