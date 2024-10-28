@@ -1,22 +1,25 @@
-import ListGroup from "react-bootstrap/ListGroup";
+import { backendend, frontend, languages, tools } from "./skills";
 import "./style.scss";
-import { skills } from "./skills";
+import ListUtils from "./utils/ListUtils";
 
 const ListSkills = () => {
   return (
-    <div className="list-container">
-      <ListGroup>
-        {skills &&
-          skills.map((skill, index) => (
-            <div key={index}>
-              <ListGroup.Item action variant="secondary">
-                <i className="bi bi-check-square-fill"></i>
-                {skill}
-              </ListGroup.Item>
-            </div>
-          ))}
-      </ListGroup>
+    <>
+    <div className="stack">
+      <ListUtils
+       title="Languages" stack={languages}      
+       />
+      <ListUtils
+       title="Frontend" stack={frontend}      
+       />
+      <ListUtils
+       title="Backendend" stack={backendend}      
+       />
+      <ListUtils
+       title="Tools" stack={tools}      
+       />
     </div>
+    </>
   );
 };
 

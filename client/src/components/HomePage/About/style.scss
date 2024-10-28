@@ -8,7 +8,7 @@
       width: 260px;
       height: 270px;
       border-radius: 50% 90% 50% 90%;
-      background-color: #f0f0ee;
+      background-color: var(--backgroundPicColor);
     }
   }
 
@@ -17,7 +17,7 @@
     text-align: left;
 
     .developer {
-      color: #2c232e;
+      color: var(--darkBlue);
     }
 
     p {
@@ -25,7 +25,7 @@
     }
 
     .info {
-      color: #6c757d;
+      color: var(--textColor);
       margin-left: 20px;
       display: table-cell;
     }
@@ -34,7 +34,8 @@
       display: table;
       width: 100%;
       p {
-        color: #6c757d;
+        color: var(--textColor);
+        text-shadow: 0px 0px 0px var(--textColor);
         display: table-row;
       }
     }
@@ -67,10 +68,10 @@
 }
 
 .main-btn {
-  background-color: #2c232e;
+  background-color: var(--darkBlue);
   padding: 6px 0px 6px 0px;
   margin-top: 30px;
-  border: 2px solid black;
+  border: 2px solid var(--darkBlue);
   border-radius: 12px;
   text-decoration: none;
   display: flex;
@@ -79,6 +80,7 @@
 
   span,
   i {
-    background-color: #2c232e;
+    color: var(--peachColor);
+    background-color: var(--darkBlue);
   }
 }

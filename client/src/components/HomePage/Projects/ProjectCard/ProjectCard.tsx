@@ -7,9 +7,9 @@ const ProjectCard = () => {
   return (
     <div className="project-card">
       {projects.map((card) => (
-        <Card key={card.id}>
+        <Card className="card" key={card.id}>
           <div>
-            <Card.Img variant="top" src={card.img} />
+            <Card.Img variant="top" src={card.img} alt={card.title}/>
           </div>
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>
@@ -17,15 +17,15 @@ const ProjectCard = () => {
             <Card.Text>More details on GitHub</Card.Text>
           </Card.Body>
           <Card.Body className="buttons">
-            <Button
-              variant="primary"
+            <Button          
               onClick={() => window.open(card.deployed, "_blank")}
+              disabled={!card.deployed}
             >
               Deployed
             </Button>
             <Button
-              variant="primary"
               onClick={() => window.open(card.github, "_blank")}
+              disabled={!card.github}
             >
               Github
             </Button>

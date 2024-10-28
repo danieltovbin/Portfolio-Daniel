@@ -1,4 +1,4 @@
-import DogsGallery from "../../../../assets/DogsGallery.png";
+import SCMS from "../../../../assets/Enrollments-SCMS.png";
 import CrossFitProject from "../../../../assets/CrossFitProject.png";
 
 interface Project{
@@ -21,10 +21,10 @@ export const projects:Project[] = [
   },
   {
     id: 2,
-    img: `${DogsGallery}`,
-    title: "Dogs Gallery",
-    text: "Dogs gallery website offers detailed about dogs breed, including images,search input that search by a letter and a page of chating with a dog you chose.",
-    deployed: "https://dogs-gallery.onrender.com/",
-    github: "https://github.com/danieltovbin/dogs_gallery",
+    img: `${SCMS}`,
+    title: "SCMS",
+    text: "The Student Course Management System simplifies course enrollment and management for students and administrators.",
+    deployed: "",
+    github: "https://github.com/danieltovbin/SCMS",
   },
 ];

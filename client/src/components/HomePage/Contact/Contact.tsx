@@ -10,7 +10,7 @@ import Whatsapp from "./Whatsapp/Whatsapp";
 const Contact = () => {
   return (
     <div id="contact" className="same-container">
-      <div>
+      <div className="contact">
         <Title title={"CONTACT"} />
         <ContactForm />
         <div className="social-links-contact">

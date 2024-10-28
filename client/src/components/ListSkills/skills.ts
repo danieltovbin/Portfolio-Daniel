@@ -1,15 +1,34 @@
-export const skills:string[] = [
-  "Redux",
+export const languages:string[] = [
   "TypeScript",
   "JavaScript",
-  "React.js",
-  "Node.js",
-  "MongoDB",
-  "Bootstrap",
-  "MySQL",
-  "OOP",
-  "MVC",
-  "API",
-  "REST APIs",
-  "Mui",
 ];
+
+export const frontend:string[] = [
+  "React.js",
+  "Next",
+  "Redux",
+  "MUI",
+  "HTML/CSS",
+  "SCSS",
+  "Bootstrap",
+];
+
+export const backendend:string[] = [
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "MySQL",
+  "MVC",
+  "JWT",
+  "REST APIs"
+];
+
+export const tools:string[] = [
+  "Git",
+  "Postman",
+  "Docker",
+  "Cloudinary",
+  "Render",
+  "Vercel"
+];
+

@@ -1,4 +1,5 @@
 .page-not-found{
+    color: var(--darkBlue);
     height: 50vh;
     width: 100vw;
     display: flex;
@@ -6,5 +7,5 @@
     align-items: center;
     text-align: center;
     font-size: 50px;
-    text-shadow: rgb(52, 51, 47) 1px 0 10px;
+    text-shadow: var(--darkBlue) 1px 0 10px;
 }

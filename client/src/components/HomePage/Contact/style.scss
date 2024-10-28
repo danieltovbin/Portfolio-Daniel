@@ -4,6 +4,19 @@
   margin-bottom: 60px;
 }
 
+.contact {
+  background-color: var(--CeruleanBlue);
+  border-radius: 100px;
+
+  i {
+    color: var(--darkBlue);
+  }
+
+  @media (max-width: 768px) {
+    background-color: var(--lightBlue);
+  }
+}
+
 #contact {
   @media (max-width: 768px) {
     padding-left: 20%;
@@ -13,16 +26,16 @@
 }
 
 .number-contact {
-  text-shadow: #2c232e 1px 0 1px;
+  text-shadow: var(--darkBlue) 1px 0 1px;
   display: flex;
   text-align: center;
   justify-content: center;
   gap: 5px;
-  color: #2c232e;
+  color: var(--darkBlue);
   font-size: 35px;
 
   i {
-    color: #2c232e;
+    color: var(--darkBlue);
   }
 }
 

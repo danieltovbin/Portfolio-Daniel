@@ -18,11 +18,6 @@
     transition: transform 0.3s ease-in-out;
     position: relative;
     transform-origin: center;
-
-    &:hover {
-      transform: scale(1.2);
-      z-index: 10;
-    }
   }
 
   @media (max-width: 768px) {
@@ -40,18 +35,21 @@
   .card {
     width: 18rem;
     border-radius: 12px;
-    border: 2px solid black;
+    background-color: var(--darkBlue);
+    border: 3px solid var(--darkBlue);
   }
 
   .card-title {
     font-weight: bold;
+    color: var(--lightBlue);
   }
 
   p.card-text {
     font-size: 12px;
+    color: var(--peachColor);
 
     &:nth-child(3) {
-      color: gray;
+      color: var(--lightBlue);
       font-weight: 800;
     }
   }
@@ -61,15 +59,25 @@
     justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 30px;
-    background-color: #2c232e;
+    background-color: var(--peachColor);
     border: none;
+    color: var(--darkBlue);
 
     &:hover {
-      background-color: #2c232e !important;
+      background-color: var(--darkBlue) !important;
+      color: var(--peachColor);
     }
     &:focus,
     &:active {
-      background-color: #2c232e !important;
+      background-color: var(--darkBlue) !important;
+      color: var(--peachColor);
+    }
+
+    &:disabled {
+      background-color: var(--lightBlue);
+      color: #ffffff;
+      cursor: not-allowed;
+      opacity: 0.7;
     }
   }
 

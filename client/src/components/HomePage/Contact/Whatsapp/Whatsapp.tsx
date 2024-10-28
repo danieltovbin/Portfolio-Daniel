@@ -12,6 +12,7 @@ const Whatsapp = () => {
       <a
         href={whatsappLink}
         target="_blank"
+        aria-label="whatsapp-link"
         rel="noopener noreferrer"
         className="whatsapp-link"
       >

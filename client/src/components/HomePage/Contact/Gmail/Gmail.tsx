@@ -10,7 +10,7 @@ const Gmail = () => {
 
   return (
     <div className="contact-container">
-      <a href={mailtoLink} className="email-link">
+      <a href={mailtoLink} className="email-link" aria-label="github-link">
         <i className="bi bi-envelope"></i>
       </a>
     </div>

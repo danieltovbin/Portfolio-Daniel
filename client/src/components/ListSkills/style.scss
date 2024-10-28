@@ -1,5 +1,10 @@
 .list-container {
   display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: var(--textColor);
+  }
 
   .list-group{
     flex-direction: row-reverse;
@@ -11,22 +16,47 @@
     display: flex;
     min-width: 200px;
     margin: 5px 0;
-    color: #858a91;
-    background-color: white;
-    font-weight: 800;
-    box-shadow: 1px 1px 6px #2c232e;
+    color: var(--peachColor);
+    background-color: var(--darkBlue);
+    font-weight: 100;
+    border-color: var(--darkBlue);
+    box-shadow: 1px 1px 5px var(--darkBlue);
     gap: 4px;
 
     &:hover {
-      color: #2c232e;
+      color: var(--textColor);
       i.bi.bi-check-square-fill {
-        color: #2c232e;
+        color: var(--textColor);
       }
     }
 
     i.bi.bi-check-square-fill {
       background: none;
-      color: #858a91;
+      color: var(--peachColor);
     }
+  }
+}
+
+.stack {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .stack {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .list-container{
+    button.list-group-item{
+      padding: 0;
+      margin: 0;
+    }
+  }
+  
+  h2 {
+    display: none;
   }
 }

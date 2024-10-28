@@ -6,6 +6,7 @@ const Linkedin = () => {
       <Nav.Link
         href="https://www.linkedin.com/in/daniel-tovbin-319a44261/"
         target="_blank"
+        aria-label="linkedin-link"
       >
         <i className="bi bi-linkedin"></i>
       </Nav.Link>
